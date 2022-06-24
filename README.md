@@ -23,3 +23,42 @@ class Solution {
     }
 }
 ```
+
+## valid Anagram
+```java
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        
+        if (s.length() != t.length()) {
+            return false;
+        }
+        
+        char[] word = new char[s.length()];
+        char[] wordToCompare = new char[t.length()];
+    
+        for (int i = 0; i < s.length(); i++) {
+            word[i] = s.charAt(i);
+        }
+        for (int i = 0; i < t.length(); i++) {
+            wordToCompare[i] = t.charAt(i);
+        }
+        
+        boolean valid = false;
+        for (int i = 0; i < word.length; i++) {
+            valid = false;
+            for (int j = 0; j < wordToCompare.length; j++) {
+                if (word[i] == wordToCompare[j]) {
+                    System.out.println("hey");
+                    valid = true;      
+                    wordToCompare[j] = ' ';
+                    break;
+                }
+            }
+            if (!valid) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+```
