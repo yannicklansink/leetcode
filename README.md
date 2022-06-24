@@ -24,7 +24,8 @@ class Solution {
 }
 ```
 
-## valid Anagram
+
+## Valid Anagram
 ```java
 class Solution {
     public boolean isAnagram(String s, String t) {
