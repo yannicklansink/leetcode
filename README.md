@@ -65,7 +65,7 @@ class Solution {
 ```
 
 
-Contains Duplicate
+ ## Contains Duplicate
 
 ```java
 public boolean containsDuplicate(int[] nums) {
@@ -75,4 +75,15 @@ public boolean containsDuplicate(int[] nums) {
 				 return true; 
 		 return false;
 }
+```
+
+## Valid Palindrome
+```java
+public boolean isPalindrome(String s) {
+        String newS = s.replaceAll("[^a-zA-Z0-9]", "");
+        StringBuilder reversedS = new StringBuilder();
+        reversedS.append(newS.toLowerCase());
+        reversedS.reverse();
+        return reversedS.toString().equals(newS.toLowerCase()) ? true : false;
+    }
 ```
