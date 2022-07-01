@@ -141,6 +141,7 @@ public int search(int[] nums, int target) {
 }
 ```
 ## Reverse Linked List
+iteratively
 ```java 
 public ListNode reverseList(ListNode head) {
         ListNode prev = null;
