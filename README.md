@@ -175,8 +175,13 @@ public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 }
 ```   
 ## Min Stack
-Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
-Medium
+Design a stack that supports push, pop, top, and retrieving the minimum element in constant time. <br/>
+Medium <br/>
+https://leetcode.com/problems/min-stack/ <br/>
+![image](https://user-images.githubusercontent.com/76790689/178001083-5bd6afd5-1021-48b5-b7ab-d03ab3483cd0.png)
+![image](https://user-images.githubusercontent.com/76790689/178001106-7344f073-f1f9-48b0-8329-1a908a854c2d.png)
+
+
 ```java
 class MinStack {
     
